@@ -79,7 +79,7 @@ public class SwapNodeInPair {
 
         head = dummyNode.next;
         if (head != null) head.prev = null;
-    }
+    }   
 
 
 
