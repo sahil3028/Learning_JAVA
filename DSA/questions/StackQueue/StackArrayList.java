@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 
 
-    public class Stack<T> {
+    public class StackArrayList<T> {
 
         private ArrayList<T> stackList = new ArrayList<>();
 
