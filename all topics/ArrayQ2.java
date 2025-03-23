@@ -44,7 +44,8 @@ public static int[] readIntegers(){
     public static void main(String[] args) {
     int[] array= readIntegers();
         System.out.println("here is the array\n"+Arrays.toString(array));
-        System.out.println("the min element is "+ findMin(array));
+        System.out.println("the minimum element is "+ findMin(array));
         System.out.println("the reverse is "+ Arrays.toString(reverse(array)));
+        System.out.println("Sahil is here");
     }
 }
