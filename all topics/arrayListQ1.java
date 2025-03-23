@@ -30,7 +30,7 @@ public class arrayListQ1 {
     }
 
     public static void addItem(ArrayList<String> gro) {
-        System.out.println("Enter stuffs to add");
+        System.out.println("Don't Enter stuffs to add");
         String[] add = in.nextLine().split(",");
         for (String i : add) {
             String trim = i.trim();
