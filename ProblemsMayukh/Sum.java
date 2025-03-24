@@ -1,7 +1,9 @@
 public class Sum {
-    public static int Add(int a,int b){
-        int c=0;
-        c=a+b;
-        return c;
+    public static int Add(int []arr, int n){
+        int sum=0;
+        for(int i=0;i<n;i++) {
+            sum += arr[i];
+        }
+        return sum;
     }
 }
