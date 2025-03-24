@@ -12,7 +12,7 @@ public class arraySum {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        int sum=Addition.Sum(arr,n);
-        System.out.println("Sum of array elements: " + sum);
+        //int sum=Addition.Sum(arr,n);
+        System.out.println("Sum of array elements: " + Addition.Sum(arr,n));
     }
 }
