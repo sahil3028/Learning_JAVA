@@ -1,7 +1,7 @@
-package questions;
+package questions.LinkedList;
 
-public class Palindrome {
-      private Node head;
+public class SwapFirstAndLastNode {
+    private Node head;
     private Node tail;
     private int len;
 
@@ -94,18 +94,23 @@ public class Palindrome {
             len++;
         }
     }
-
-    public boolean isPalindrome(){
-        Node start=head;
-        Node end=tail;
-        if (head==null) return true;
-        while(start.next!=null){
-            if (start.value!= end.value){
-                return false;
-            }
-            start=start.next;
-            end=end.prev;
+    public void remove(int x){
+        Node temp=head;
+        for(int i=1;i<x-1;i++){
+            temp=temp.next;
         }
-        return true;
+    }
+
+    public void swapFirstLast(){
+        if(len<2){
+            return;
+        }
+        Node temp=head;
+        while(temp.next!=null){
+            temp=temp.next;
+        }
+        int ss= head.value;
+        head.value=temp.value;
+        temp.value=ss;
     }
 }
