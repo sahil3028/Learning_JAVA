@@ -1,4 +1,4 @@
-package questions.StackQueue;
+package StackQueue;
 import java.util.ArrayList;
 
 

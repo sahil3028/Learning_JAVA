@@ -1,8 +1,11 @@
-package questions.LinkedList;
+package Linked_List;
 
 public class Main {
+    public Main() {
+    }
+
     public static void main(String[] args) {
-        SwapNodeInPair dd= new SwapNodeInPair();
+        SwapNodeInPair dd = new SwapNodeInPair();
         dd.newNode(1);
         dd.newNode(2);
         dd.newNode(3);
@@ -10,12 +13,10 @@ public class Main {
         dd.newNode(5);
         dd.print();
         System.out.println();
-        //dd.printr();
         dd.swapPairs();
         System.out.println();
         dd.print();
         System.out.println();
         dd.printr();
-
     }
 }

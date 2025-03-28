@@ -1,4 +1,4 @@
-package questions.LinkedList;
+package LinkedList;
 
 public class Reverse {
 
