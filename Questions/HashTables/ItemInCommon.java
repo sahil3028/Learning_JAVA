@@ -1,9 +1,10 @@
+
 package HashTables;
 
 import java.util.HashMap;
 
 public class ItemInCommon {
-    public boolean sol(int[] a1 , int[] a2){
+
         public boolean itemInCommon(int[] array1, int[] array2) {
             HashMap<Integer, Boolean> myHashMap = new HashMap<>();
 
@@ -19,4 +20,5 @@ public class ItemInCommon {
         }
 
     }
-}
+
+
