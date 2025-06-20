@@ -22,4 +22,6 @@ public class firstNonRepeatingChar {
 
             return null; // Return null if no non-repeating character is found
         }
-}}
+
+    }
+}

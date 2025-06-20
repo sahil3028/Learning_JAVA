@@ -1,7 +1,7 @@
 package LinkedList;
 
 public class Palindrome {
-      private Node head;
+    private Node head;
     private Node tail;
     private int len;
 

@@ -1,7 +1,9 @@
+
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
-public class arrayBasic {
+
+public class ArrayBasic {
 
 //making a method for generation of random array
 public static int[] random(int len){
@@ -69,7 +71,7 @@ public static int[] random(int len){
         //doesn't work for duplicate elements
 
         System.out.println("Binary Search and equal arrays");
-        String[] a={"abhi","babhi","sahil","snake","zebra"};
+        String[] a={"abhi","bhbji","sahil","snake","zebra"};
         if(Arrays.binarySearch(a,"sahil")>0){
             System.out.println("Found");
         }
