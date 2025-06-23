@@ -10,6 +10,8 @@
       <sourceFolder url="file://$MODULE_DIR$/all topics/Array_List" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/all topics/misc" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/all topics/OOPs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/all topics/OOPs/Encapluation" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
