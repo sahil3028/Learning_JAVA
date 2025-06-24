@@ -1,5 +1,21 @@
 package BankAccount;
 
+/*
+object= instance
+name of object =refrence
+
+in constructor chaining always use the this statement in the first line
+
+static and instance variable
+if we create an object of a class and  change the value of the static variable by multiple obj it will retain only the last one and will show same for eery other obj so basically its a variable repesenting whole class
+
+static and instance methods
+we have to create a instance(Object) to call an instance method(non static)
+using only class name would do the work for static method no need to create a seperate instance
+
+*/
+
+
 public class Main {
     public static void main(String[] args) {
         BankAccount c1=new BankAccount();

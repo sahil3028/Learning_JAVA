@@ -1,5 +1,7 @@
 package Records;
-
+//much less boiler code in records
+//cant be changed or added in the lists
+//it is final list and immuatble 
 public class Main {
 
     public static void main(String[] args) {
