@@ -1,88 +1,176 @@
 package linkedl;
 
-//public class LinkedList {
-//    class Node {
-//        int value;
-//        Node next;
-//
-//        Node(int value) {
-//            this.value = value;
-//        }
-//    }
-//
-//    private Node head;
-//    private Node tail;
-//    private int length;
-//
-//    public void newNode(int val) {
-//        Node newn = new Node(val);
-//        Node temp = head;
-//        if (head == null) {
-//            head = newn;
-//            tail = newn;
-//        } else {
-//            while (temp.next != null) {
-//                temp = temp.next;
-//            }
-//            temp.next = newn;
-//            tail = newn;
-//        }
-//    }
-//
-//    public void addfirst(int val){
-//        Node newn = new Node(val);
-//        Node temp = head;
-//        head=newn;
-//        head.next=temp;
-//    }
-//
-//    public void print() {
-//        Node temp = head;
-//        while (temp != null) {
-//            System.out.print(temp.value + "  ");
-//            temp = temp.next;
-//        }
-//    }
-//
-//    public void rev(){
-//           Node temp = tail;
-//        while (temp != null) {
-//            System.out.print(temp.value + "  ");
-//            temp = temp.next;
-//        }
-//    }
-//
-//    public void remove(int x) {
-//        Node temp = head;
-//        if(head.value==x){
-//            if(head.next !=null)
-//            head=head.next;
-//            else head=null;
-//            return;
-//        }
-//        else if(temp.next==null){
-//            System.out.println("not found");
-//            tail=temp;
-//            return;
-//        }
-//        while (temp.next != null) {
-//
-//            if(x == temp.next.value){
-//                if(temp.next.next!=null){
-//                    temp.next=temp.next.next;
-//                    return;
-//                }else{
-//                    temp.next=null;
-//                    tail=temp;
-//                    return;
-//                }
-//            }
-//            temp=temp.next;
-//        }
-//    }
-//}
+/*
+public class LinkedList {
+
+    class Node {
+        int val;
+        Node next;
+
+        Node(int val) {
+            this.val = val;
+        }
+    }
+
+        private Node head;
+        private Node tail;
+
+        public LinkedList(int val){
+            Node newn=new Node(val);
+            head=newn;
+            tail=newn;
+        }
+        public void printList(){
+            Node temp=head;
+            while (temp!=null){
+                System.out.println(temp.val);
+                temp=temp.next;
+            }
+        }
+        public void getHead(){
+            if(head==null){
+                System.out.println("linked list is empty");
+            }else {
+                System.out.println("Head: "+head);
+            }
+        }
+        public void gerTail(){
+            if(tail==null){
+                System.out.println("empty");
+            }else {
+                System.out.println("Tail: "+tail);
+            }
+        }
+        public int getLength(){
+            if(head==null){
+                System.out.println("Length= 0");
+                return 0;
+            }
+            Node temp=head;
+            int i;
+            for( i=1;temp.next!=null;i++) temp=temp.next;
+            return i;
+        }
+
+        public void append(int val){
+            Node newn=new Node(val);
+            if(head==null){
+                head=newn;
+                tail=newn;
+            }else {
+                Node temp=head;
+                while (temp.next!=null){
+                    temp=temp.next;
+                }
+                temp.next=newn;
+                tail=newn;
+            }
+        }
+        public void removeLast(){
+            if (head==null){
+                System.out.println("empty");
+            }else {
+                Node temp=head,pre=head;
+                while(temp.next!= null){
+                    pre=temp;
+                    temp=temp.next;
+                }
+                pre.next=null;
+                tail=pre;
+            }
+        }
+        public void prepend(int val){
+            Node newn =new Node(val);
+            if(head==null){
+                head=newn;
+                tail=newn;
+            }
+            else{
+                newn.next = head;
+                head = newn;
+            }
+        }
+
+        public void removeFirst(){
+            if(head!=null) {
+                Node temp=head;
+                head = head.next;
+                temp.next=null;
+            }
+        }
+        public void get(int x){
+            if (x>getLength()){
+                System.out.println("Not Exist");
+                return;
+            }
+            Node temp=head;
+            for(int i=1;i<x;i++){
+                temp=temp.next;
+            }
+            System.out.println(temp);
+        }
+
+        public void set(int x,int v){
+            if (x>getLength()){
+                System.out.println("Not Exist");
+                return;
+            }
+            Node temp=head;
+            for(int i=1;i<x;i++){
+                temp=temp.next;
+            }
+            temp.val=v;
+        }
+        public void insert(int x, int v){
+            if (x>getLength()){
+                System.out.println("Not Exist");
+                return;
+            }
+            Node temp=head;
+            for(int i=1;i<x-1;i++){
+                temp=temp.next;
+            }
+            Node newn=new Node(v);
+            newn.next=temp.next;
+            temp.next=newn;
+        }
+        public void remove(int x){
+            if (x>getLength()){
+                System.out.println("Not Exist");
+                return;
+            }
+            Node temp=head;
+            for(int i=1;i<x-1;i++){
+                temp=temp.next;
+            }
+            temp.next=temp.next.next;
+        }
+        public void reverse(){
+            if(head==null){
+                System.out.println("empty");
+                return;
+            }
+            else {
+                Node bef=null,pre=head,aft=head;
+                head=tail;
+                tail=pre;
+                while (pre!=null){
+                    aft=aft.next;
+                    pre.next=bef;
+                    bef=pre;
+                    pre=aft;
+                }
+                */
+/*tail=head;
+                head=pre;*//*
+
+            }
+        }
 
 
+
+    }
+*/
 
 public class LinkedList {
 
@@ -90,7 +178,7 @@ public class LinkedList {
     private Node tail;
     private int length;
 
-     class Node {
+    class Node {
         int value;
         Node next;
 
@@ -253,3 +341,10 @@ public class LinkedList {
     }
 
 }
+
+
+
+
+
+
+

@@ -13,7 +13,6 @@ public class Main {
 
         System.out.println("LL before reverse():");
         myLinkedList.printList();
-
         myLinkedList.reverse();
 
         System.out.println("\nLL after reverse():");
