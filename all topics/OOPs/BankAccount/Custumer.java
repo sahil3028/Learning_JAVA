@@ -1,7 +1,5 @@
 package BankAccount;
 
-import java.util.PrimitiveIterator;
-
 public class Custumer {
     private String name;
     private int creditLimit;

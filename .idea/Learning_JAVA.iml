@@ -12,6 +12,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Array" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/all topics/OOPs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/all topics/OOPs/Encapluation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/all topics/string" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

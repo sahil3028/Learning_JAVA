@@ -21,8 +21,7 @@ public class Dog extends Animal {
 
     //here in the super() ternary operator is used great example to use super and this
     public Dog(String type, double weight, String earShape, String tailShape) {
-        super(type, weight <  15 ? "small" : (weight < 35 ? "medium" : "large"),
-                weight);
+        super(type, weight <  15 ? "small" : (weight < 35 ? "medium" : "large"), weight);
         this.earShape = earShape;
         this.tailShape = tailShape;
     }

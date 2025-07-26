@@ -29,6 +29,9 @@ public class Main {
         System.out.println(pojoStudent);
         System.out.println(recordStudent);
 
+        //here we are modifying a variable of a class
+        //since the record is immutable it can only be set once while creating an object
+        //in POJO it can be modified
         pojoStudent.setClassList(pojoStudent.getClassList() + ", Java OCP Exam 829");
 //        recordStudent.setClassList(recordStudent.classList() + ", Java OCP Exam 829");
 
