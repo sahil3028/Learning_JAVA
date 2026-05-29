@@ -55,7 +55,7 @@ public static int[] random(int len){
 
         System.out.println(Arrays.toString(rndArray));
         Arrays.sort(rndArray);
-        System.out.println(Arrays.toString(rndArray));
+        System.out.println(Arrays.toString(rndArray)); 
 
 //making copy of the array
         System.out.println("making copy and using filler array");
@@ -71,8 +71,8 @@ public static int[] random(int len){
         //doesn't work for duplicate elements
 
         System.out.println("Binary Search and equal arrays");
-        String[] a={"abhi","bhbji","sahil","snake","zebra"};
-        if(Arrays.binarySearch(a,"sahil")>0){
+        String[] a={"abhi","babhi","sahil","snake","zebra"};
+        if(Arrays.binarySearch(a,"sahil")  >0){
             System.out.println("Found");
         }
         else {
@@ -90,7 +90,7 @@ public static int[] random(int len){
 
         // LET'S TALK ABOUT VARARGS (variable arguments)
         //in we use ... instead of [] in the argument of a method so that we can directly
-        // send values to and separate  it by using comas and it automatically creates that array
+        // send values to and separate  it by using comas, and it automatically creates that array
 
         System.out.println(Arrays.toString(varargs("zebra","Sahil")));
 

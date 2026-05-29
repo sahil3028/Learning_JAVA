@@ -13,6 +13,8 @@
       <sourceFolder url="file://$MODULE_DIR$/all topics/OOPs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/all topics/OOPs/Encapluation" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/all topics/string" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Notes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Mini_Projects" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

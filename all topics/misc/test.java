@@ -48,7 +48,7 @@
 //
 //            switch (menuItem) {
 //                case "F":
-//                    System.out.println("User wants to go forward");
+//                    System.out.println("Member wants to go forward");
 //                    if (!forward) {           // Reversing Direction
 //                        forward = true;
 //                        if (iterator.hasNext()) {
@@ -63,7 +63,7 @@
 //                    break;
 //
 //                case "B":
-//                    System.out.println("User wants to go backwards");
+//                    System.out.println("Member wants to go backwards");
 //                    if (forward) {           // Reversing Direction
 //                        forward = false;
 //                        if (iterator.hasPrevious()) {
