@@ -1,0 +1,36 @@
+/*
+Topic: User Input using BufferReader and Scanner
+Definition: This file introduces User Input using BufferReader and Scanner in Java.
+Why / usage: It provides a focused example of the concept.
+Where to use it: Use the concept where the program needs the behaviour shown in the active code.
+*/
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+public class Demo {
+    public static void main(String[] args) throws IOException{   	
+    	
+//    	System.out.println("Enter a number");
+//    	int num=System.in.read();
+//    	
+//  	System.out.println(num);
+//    	System.out.println(num-48);
+    	
+    	System.out.println("Enter a number");
+    	
+//    	InputStreamReader in=new InputStreamReader(System.in);
+//    	BufferedReader bf=new BufferedReader(in);
+    	
+//    	int num=Integer.parseInt(bf.readLine());
+//    	System.out.println(num);
+  //  	BufferedReader bf=new BufferedReader(null);
+  // 	System.out.println(num-48);
+    	
+    	Scanner sc=new Scanner(System.in);
+    	int num=sc.nextInt();
+    	System.out.println(num);
+    }
+}
+

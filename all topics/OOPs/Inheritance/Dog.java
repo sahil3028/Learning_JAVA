@@ -1,5 +1,34 @@
+/*
+========================================================
+TOPIC : INHERITANCE AND METHOD OVERRIDING
+========================================================
+
+Definition:
+Inheritance lets a child class reuse accessible fields and methods from a parent class, forming an IS-A relationship.
+
+Why Java provides this feature:
+Common Animal behaviour is written once, while Dog and Fish add their own specialised behaviour.
+
+Real-world analogy:
+A dog IS AN animal and a fish IS AN animal, but they move differently.
+
+How THIS file demonstrates the topic:
+This file is Inheritance\Dog.java. It contains or uses: Dog. Read the
+comments near fields, constructors, object creation, and method calls
+to connect each line with the OOP concept.
+
+Key methods in this file: Dog, toString, makeNoise, move, bark, run, walk, wagTail. These methods are the best places to explain this topic in a viva.
+
+Viva / interview focus:
+What does extends mean? What is inherited? Why call super()? What is method overriding?
+
+Key comparison:
+Inheritance reuses a parent class. Composition stores another object as a field.
+========================================================
+*/
 package Inheritance;
 
+// Dog is the main study class in this file. Its declaration introduces the data and behaviour used to demonstrate inheritance and method overriding.
 public class Dog extends Animal {
 
     private String earShape;
@@ -62,19 +91,19 @@ public class Dog extends Animal {
         }
         System.out.println();
     }
-
+    // bark is a private helper method. Keeping this small behaviour inside the class hides implementation details while public methods expose the meaningful OOP behaviour.
     private void bark() {
         System.out.print("Woof! ");
     }
-
+    // run is a private helper method. Keeping this small behaviour inside the class hides implementation details while public methods expose the meaningful OOP behaviour.
     private void run() {
         System.out.print("Dog Running ");
     }
-
+    // walk is a private helper method. Keeping this small behaviour inside the class hides implementation details while public methods expose the meaningful OOP behaviour.
     private void walk() {
         System.out.print("Dog Walking ");
     }
-
+    // wagTail is a private helper method. Keeping this small behaviour inside the class hides implementation details while public methods expose the meaningful OOP behaviour.
     private void wagTail() {
         System.out.print("Tail Wagging ");
     }

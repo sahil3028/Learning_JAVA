@@ -1,103 +1,98 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class helo {
-    static Scanner in=new Scanner(System.in);
+class arr_op{
 
-    public static boolean checkpos(int size, int pos){
-        if(pos>size){
-            System.out.println("The pos is more than the size try again");
-            return false;
-        }return true;
+    public arr_op(int size){
+        arr_op.size = size;
+        arr = new int[size+10];
     }
 
-    public static boolean insert(int [] arr, int size){
-        System.out.println("Enter the pos you  wanna insert ");
-        int pos = in.nextInt();
 
-        if(!checkpos(size,pos)) return false;
-        else pos--;
+    static int size;
+    static int[] arr;
 
-
-        System.out.println("Enter the value ");
-        int val=in.nextInt();
-
-        for(int x=size;x>=pos;x--){
-            arr[x+1]=arr[x];
-           // if(x==pos) arr[pos]=val;
+    public boolean checkpos(int pos){
+        return pos <= size;
+    }
+    public void disp(){
+        for(int i=0;i<size;i++){
+            System.out.print(arr[i]+"  ");
         }
-        arr[pos]=val;
-       return true;
     }
-    public static boolean delete(int [] arr, int size){
-        System.out.println("enter the pos you want to delete ");
-        int pos=in.nextInt();
-        if(!checkpos(size,pos)) return false;
-        else pos--;
+    public void insert(int pos,int val){
+        if (!checkpos(pos))
+            return;
+        for(int i=size-1 ; i>=pos-1 ;i--)
+            arr[i+1]=arr[i];
+        arr[pos-1]=val;
+        size++;
+        disp();
+    }
 
-        for(int i=pos;i<size;i++){
+    public void delete(int pos){
+        if(!checkpos(pos)) return;
+        for(int i=pos-1;i<size;i++){
             arr[i]=arr[i+1];
         }
-        return true;
+        size--;
+        disp();
+    }
+    public void replace(int pos, int val){
+        if(!checkpos(pos)) return;
+        arr[pos-1]=val;
+        disp();
     }
 
-    public static void replace(int [] arr, int size){
-        System.out.println("Enter the pos you wanna delete");
-        int pos=in.nextInt();
+    public void search(int val){
 
-        if(!checkpos(size,pos)) return;
-        else pos--;
+        if(Arrays.binarySearch(arr,val)<0) System.out.println("not found");
+        else System.out.println("found");
 
-        System.out.println("Enter the value");
-        int val=in.nextInt();
-        arr[pos]=val;
+
+        disp();
     }
-    public static void search(int[] arr,int size ){
-        System.out.println("Enter the val to search ");
-        int val=in.nextInt();
-        if(Arrays.binarySearch(arr,val)<0){
-            System.out.println("not found");
-            return;
-        }else System.out.println("found");
-    }
+}
 
+class helo{
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
 
-        int[] arr= new int[67];
-        System.out.println("Enter the size of your array- ");
-        int size=in.nextInt();
-        System.out.println("Enter the elements");
-        for(int i=0;i<size;i++){
-            arr[i]=in.nextInt();
-        }
+        System.out.print("Enter the the size of array:-> ");
+        arr_op op= new arr_op(in.nextInt());
+
+        for(int i=0;i<arr_op.size;i++)
+            arr_op.arr[i]=in.nextInt();
 
         while(true){
-            System.out.println("M E N U :\n1. Insert an element\n2. Delete an element\n3. Replace an element\n4. Search an element\n5. Display\n0. Exit");
+            System.out.println("\nM E N U :\n1. Insert an element\n2. Delete an element\n3. Replace an element\n4. Search an element\n5. Display\n0. Exit");
             int ch=in.nextInt();
+            int pos;
             switch (ch){
                 case 1:
-                    if (insert(arr,size))
-                    size++;
+                    System.out.print("enter pos-> ");
+                    pos=in.nextInt();
+                    System.out.print("enter val-> ");
+                    int val=in.nextInt();
+                    op.insert(pos,val);
                     break;
                 case 2:
-                    if(delete(arr,size))
-                    size--;
+                    System.out.print("enter pos-> ");
+                    op.delete(in.nextInt());
                     break;
                 case 3:
-                    replace(arr,size);
+                    System.out.print("enter pos and value -->  ");
+                    op.replace(in.nextInt(),in.nextInt());
                     break;
                 case 4:
-                    search(arr,size);
+                    System.out.print("enter the element--> ");
+                    op.search(in.nextInt());
                     break;
                 case 5:
-                    System.out.println(Arrays.toString(arr));
+                    op.disp();
                     break;
-                case 0:
+                case 6:
                     System.exit(0);
-                    break;
-                default:
-                    System.out.println("wrong input try again");
-                    break;
             }
         }
     }
